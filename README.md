@@ -1,5 +1,4 @@
 # rothko
-ai and art, man and machine, tragedy and ecstasy
+Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 
-ai x art :)
-ai design studio 
+AI Design Studio
