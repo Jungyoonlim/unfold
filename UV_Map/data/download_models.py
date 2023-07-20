@@ -23,7 +23,7 @@ response.raise_for_status()
 model_uid = response.json()['results'][0]['uid']
 
 # Use the download API to get the download link
-download_url = f'https://api.sketchfab.com/v3/models/{model_uid}/download'
+download_url = f'https://api.sketchfab.com/v3/models'
 response = requests.get(download_url, headers={'Authorization': f'Token {API_token}'})
 response.raise_for_status()
 
