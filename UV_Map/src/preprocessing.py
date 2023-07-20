@@ -23,9 +23,10 @@ for zip_link in zip_links[:500]:
     # Download the ZIP file
     zip_data = requests.get(full_url).content
 
-    # Save it to disk
-    with open(os.path.join('path_to_save_folder', os.path.basename(zip_link)), 'wb') as f:
+    # Save it to downloaded_models
+    with open(os.path.join('./downloaded_models', os.path.basename(zip_link)), 'wb') as f:
         f.write(zip_data)
+
 
     # Delay to avoid overloading the server
     time.sleep(random.uniform(1, 3))
