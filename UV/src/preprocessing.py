@@ -1,9 +1,7 @@
 import os
-import zipfile
 import requests
 import time
 import random
-from zipfile import ZipFile
 
 def generate_random_ids(n):
     return [random.randint(100000, 999999) for _ in range(n)]
@@ -30,24 +28,8 @@ def download_thing(thing_id):
         for chunk in response.iter_content(chunk_size=1024):
             if chunk:  # filter out keep-alive new chunks
                 f.write(chunk)
-                
+
     print(f"Successfully downloaded thing {thing_id}")
-
-    # Unzipping the file
-    unzipped_directory = '/Users/jungyoonlim/Desktop/rothko/UV/data/unzipped'  # Adjust this path accordingly
-    os.makedirs(unzipped_directory, exist_ok=True)  # Ensure the directory exists
-
-    try:
-        with ZipFile(zip_path, 'r') as zip_ref:
-            zip_ref.extractall(f"{unzipped_directory}/{thing_id}")
-        print(f"Successfully unzipped thing {thing_id}")
-    except zipfile.BadZipFile:
-        print(f"Failed to unzip thing {thing_id}. File is not a zip file.")
-
-    with ZipFile(zip_path, 'r') as zip_ref:
-        zip_ref.extractall(f"{unzipped_directory}/{thing_id}")
-
-    print(f"Successfully unzipped thing {thing_id}")
 
 print("Starting script...")
 print("Downloading files...")
