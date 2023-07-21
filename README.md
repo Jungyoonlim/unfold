@@ -11,4 +11,4 @@ Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 - a program that reads codes and tells you which part of the physical product works. and could change just based on plain english. website is one good example. machine <> human translation and humans could directly alter the code in plain english. like where is this button placed in the code? and how could i move it little bit to the right? then shows me which snippet of the code determines that and how i could alter the code. not just a website but other digital things that require coding 
 - like, bring in some images and mix and blend style and such and save a lot of time even for beginners. and show humans where in the code they can make changes
 
-An Ode to Mark Rothko 
+An Ode to Mark Rothko <3
