@@ -14,7 +14,7 @@ def download_thing(thing_id):
 
     url = f"https://www.thingiverse.com/thing:{thing_id}/zip"
 
-    raw_directory = '/Users/jungyoonlim/Desktop/rothko/data/raw'  # Adjust this path accordingly
+    raw_directory = '/Users/jungyoonlim/rothko/UV/data/raw'
     os.makedirs(raw_directory, exist_ok=True)  # Ensure the directory exists
 
     response = requests.get(url, stream=True)
