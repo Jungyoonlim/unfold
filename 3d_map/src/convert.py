@@ -7,8 +7,8 @@ def convert(input_path, output_path):
     mesh.export(output_path)
     print(f"Successfully converted {input_path}")
 
-unzipped_directory = '/Users/jungyoonlim/rothko/UV/data/unzipped'
-converted_directory = '/Users/jungyoonlim/rothko/UV/data/converted'
+unzipped_directory = '/Users/jungyoonlim/rothko/3d_map/data/unzipped'
+converted_directory = '/Users/jungyoonlim/rothko/3d_map/data/converted'
 os.makedirs(converted_directory, exist_ok=True)
 
 for thing_id in os.listdir(unzipped_directory):
