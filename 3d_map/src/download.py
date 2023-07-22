@@ -2,6 +2,8 @@ import os
 import requests
 import time
 import random
+import zipfile
+import mimetypes
 
 def generate_random_ids(n):
     return [random.randint(100000, 999999) for _ in range(n)]
@@ -29,6 +31,15 @@ def download_thing(thing_id):
                 f.write(chunk)
 
     print(f"Successfully downloaded thing {thing_id}")
+    
+    # Unzip and check for UV coordinates
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        for filename in zip_ref.namelist():
+            if filename.endswith('.obj'):
+                with zip_ref.open(filename) as f:
+                    has_uv_coordinates = any(line.startswith(b'vt') for line in f)
+                    print(f"Model '{filename}' has UV coordinates: {has_uv_coordinates}")
+
 
 print("Starting script...")
 print("Downloading files...")
