@@ -1,23 +1,35 @@
-import os
+from bs4 import BeautifulSoup
 import requests
-import time
 import random
-import zipfile
-import mimetypes
+import os  # Add this import
 
 def generate_random_ids(n):
     return [random.randint(100000, 999999) for _ in range(n)]
 
-# Generate 30 random 6-digit Thingiverse IDs
-thing_id_list = generate_random_ids(15)
+thing_id_list = generate_random_ids(100)
+
+def check_uv_mapping(thing_id):
+    url = f"https://www.turbosquid.com/3d-models/3d-model-{thing_id}"
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    # Find UV Mapped tag using its ID
+    uv_mapped_tag = soup.find('span', {'id': 'FPSpec_uv_mapped'}) 
+
+    if uv_mapped_tag is not None:
+        print(f"UV Mapped tag found for Thing ID: {thing_id}")
+        return True
+
+    print(f"No UV Mapped tag found for Thing ID: {thing_id}")
+    return False
 
 def download_thing(thing_id):
     print(f"Downloading files for thing ID: {thing_id}")
 
-    url = f"https://www.thingiverse.com/thing:{thing_id}/zip"
+    url = f"https://www.turbosquid.com/3d-models/3d-model-{thing_id}"
 
     raw_directory = '/Users/jungyoonlim/rothko/3d_map/data/raw'
-    os.makedirs(raw_directory, exist_ok=True)  
+    os.makedirs(raw_directory, exist_ok=True)  # 'os' is now recognized  
     response = requests.get(url, stream=True)
 
     if response.status_code != 200:
@@ -31,21 +43,7 @@ def download_thing(thing_id):
                 f.write(chunk)
 
     print(f"Successfully downloaded thing {thing_id}")
-    
-    # Unzip and check for UV coordinates
-    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-        for filename in zip_ref.namelist():
-            if filename.endswith('.obj'):
-                with zip_ref.open(filename) as f:
-                    has_uv_coordinates = any(line.startswith(b'vt') for line in f)
-                    print(f"Model '{filename}' has UV coordinates: {has_uv_coordinates}")
-
-
-print("Starting script...")
-print("Downloading files...")
 
 for thing_id in thing_id_list:
-    download_thing(thing_id)
-    time.sleep(random.uniform(1, 3))  # Delay to avoid overloading the server
-
-print("Script completed successfully.")
+    if check_uv_mapping(thing_id):
+        download_thing(thing_id)

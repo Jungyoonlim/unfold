@@ -21,3 +21,7 @@ for file in os.listdir(raw_directory):
             print(f"Successfully unzipped thing {thing_id}")
         except zipfile.BadZipFile:
             print(f"Failed to unzip thing {thing_id}. File is not a zip file.")
+
+def is_zipfile(filename):
+    with open(filename, 'rb') as file:
+        return file.read(4) == b'PK\x03\x04'
