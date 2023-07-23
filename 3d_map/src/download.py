@@ -8,16 +8,16 @@ def generate_random_ids(n):
 
 thing_id_list = generate_random_ids(100)
 
+url = 'https://www.turbosquid.com/Search/3D-Models/free'
+r = requests.get(url)
+
 def check_uv_mapping(thing_id):
-    url = f"https://www.turbosquid.com/3d-models/3d-model-{thing_id}"
+    url = f"https://www.turbosquid.com/free/3d-models/3d-model-{thing_id}"
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
 
     # Find UV Mapped tag using its ID
     uv_mapped_tag = soup.find('span', {'id': 'FPSpec_uv_mapped'}) 
-
-    #find free ones!
-    free_tag = soup.find('span', {'id': 'price'})
 
     if uv_mapped_tag is not None:
         print(f"UV Mapped tag found for Thing ID: {thing_id}")
