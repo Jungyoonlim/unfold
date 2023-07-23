@@ -16,6 +16,9 @@ def check_uv_mapping(thing_id):
     # Find UV Mapped tag using its ID
     uv_mapped_tag = soup.find('span', {'id': 'FPSpec_uv_mapped'}) 
 
+    #find free ones!
+    free_tag = soup.find('span', {'id': 'price'})
+
     if uv_mapped_tag is not None:
         print(f"UV Mapped tag found for Thing ID: {thing_id}")
         return True
