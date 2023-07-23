@@ -1,1 +1,0 @@
-blank keychain by jacksonreese96 on Thingiverse: https://www.thingiverse.com/thing:674639

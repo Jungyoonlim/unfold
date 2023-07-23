@@ -1,1 +1,0 @@
-My Customized Nintendo 3DS Game Card Box - Modified by pyloros on Thingiverse: https://www.thingiverse.com/thing:404454

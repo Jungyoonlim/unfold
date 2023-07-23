@@ -1,1 +1,0 @@
-My Customized Desktop Nameplate by ksuwhan1 on Thingiverse: https://www.thingiverse.com/thing:866066

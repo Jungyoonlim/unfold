@@ -1,1 +1,0 @@
-90 curve rc7 .4 12 36 by pkafin on Thingiverse: https://www.thingiverse.com/thing:129180

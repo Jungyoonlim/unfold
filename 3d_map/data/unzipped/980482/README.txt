@@ -1,1 +1,0 @@
-Reversible Elastic Band PCB vice vise by Hagster on Thingiverse: https://www.thingiverse.com/thing:980482

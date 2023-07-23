@@ -1,1 +1,0 @@
-Spherometer by zakass on Thingiverse: https://www.thingiverse.com/thing:125674

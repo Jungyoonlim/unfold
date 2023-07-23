@@ -1,1 +1,0 @@
-Custom Simple Lens Hood by Spudwheelie on Thingiverse: https://www.thingiverse.com/thing:616874

@@ -1,1 +1,0 @@
-My Customized Ring - inside and out by jaw12346 on Thingiverse: https://www.thingiverse.com/thing:690247

@@ -1,1 +1,0 @@
-Like - Dual color LIKE Money Bank by K_3DJollyFab on Thingiverse: https://www.thingiverse.com/thing:583016

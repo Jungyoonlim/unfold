@@ -1,1 +1,0 @@
-Avatar Builder - TIK by CharlesCHAN on Thingiverse: https://www.thingiverse.com/thing:200990

@@ -1,1 +1,0 @@
-My Customized Lithopane by Snowflakes on Thingiverse: https://www.thingiverse.com/thing:873934

@@ -1,1 +1,0 @@
-My Customized Chess Board (interlocking) by browerpower23 on Thingiverse: https://www.thingiverse.com/thing:841730

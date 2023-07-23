@@ -1,1 +1,0 @@
-My Customized Embossing Stamp by lucaspencha on Thingiverse: https://www.thingiverse.com/thing:526222

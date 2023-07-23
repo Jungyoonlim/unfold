@@ -1,1 +1,0 @@
-Els Desparramats by wwuito on Thingiverse: https://www.thingiverse.com/thing:928338

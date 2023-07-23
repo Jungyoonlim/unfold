@@ -1,1 +1,0 @@
-My Nameplate by CharlesCHAN on Thingiverse: https://www.thingiverse.com/thing:220389

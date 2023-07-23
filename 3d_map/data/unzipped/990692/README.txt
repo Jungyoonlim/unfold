@@ -1,1 +1,0 @@
-h6 by xbikevn on Thingiverse: https://www.thingiverse.com/thing:990692

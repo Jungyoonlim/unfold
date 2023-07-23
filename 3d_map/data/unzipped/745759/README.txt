@@ -1,1 +1,0 @@
-GE Logo by Munchie12 on Thingiverse: https://www.thingiverse.com/thing:745759

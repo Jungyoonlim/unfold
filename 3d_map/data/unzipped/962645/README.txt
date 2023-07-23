@@ -1,1 +1,0 @@
-My Customized smartphone holder man 95 by frosch0815 on Thingiverse: https://www.thingiverse.com/thing:962645

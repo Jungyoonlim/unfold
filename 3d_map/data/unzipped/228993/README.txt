@@ -1,1 +1,0 @@
-NAGESI hook by masahiro-jp on Thingiverse: https://www.thingiverse.com/thing:228993

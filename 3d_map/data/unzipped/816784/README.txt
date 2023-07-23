@@ -1,1 +1,0 @@
-xyzPrinting Davinci X Carriage for LM8UU by GinoKe on Thingiverse: https://www.thingiverse.com/thing:816784
