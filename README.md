@@ -14,3 +14,4 @@ Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 - Jul 23: Try turbosquid to download only the ones with UV maps / alter the src codes for that!
 
 An Ode to Mark Rothko <3
+'Determined to find agency amid life's challenges, transformed pain into beauty and meaning.'
