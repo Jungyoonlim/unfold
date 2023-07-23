@@ -1,4 +1,4 @@
-# rothko.ml
+# rothko AI
 Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 
 # What Rothko does: AI Art and Design Studio
@@ -8,7 +8,8 @@ Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 - ML Algorithms can have an advantage by training on a wide variety of complex geometries, e.g. dealing with non-planar or concave polygons, quite common in 3D models. 
 
 ### timeline
+- Jul 17-21: download
 - Jul 22: unzip, convert, parse
-- Jul 23: Try turbosquid to download only the ones with UV maps / alter the src codes 
+- Jul 23: Try turbosquid to download only the ones with UV maps / alter the src codes for that!
 
 An Ode to Mark Rothko <3
