@@ -3,7 +3,7 @@ Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 
 # What Rothko does: AI Art and Design Studio
 - Project #1:  Automate UV unwrapping for 3D modeling (in interior design, games, 3d art, ar/vr, architecture, engineering, product design etc)
-- Project #2: Unsupervised Learning (K-Clustering) x Art. 
+- Project #2: Unsupervised Learning (K-Clustering) x Art. Exploring the bounds of creativity and the human mind. Unlabelled data to see the gaps of human perception.
 
 ### What is UV-ing?
 - ML Algorithms can have an advantage by training on a wide variety of complex geometries, e.g. dealing with non-planar or concave polygons, quite common in 3D models. 
