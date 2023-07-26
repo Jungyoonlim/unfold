@@ -20,5 +20,9 @@ model.fit(X)
 # Determine the cluster labels of X: labels
 labels = model.predict(X)
 
-# Print cluster labels of X
-print(labels)
+df['Cluster'] = labels
+
+for i in range(3):
+    print(f"cluster {i}:")
+    print(df[df['Cluster'] == i].head())
+    print("\n")
