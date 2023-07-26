@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from main import df, labels
+from Kcluster_main import df, labels
 import seaborn as sns 
 
 # simple visualization for practice! 
