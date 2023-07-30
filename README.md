@@ -19,5 +19,6 @@ Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 - Jul 25-Aug 1: Data cleaning, data augmentation, data preprocessing for Project #1, Data preparation (Moma's Collection) for Project #2
 - Need to learn more about GANs. Will document on my blog. 
 - Trying Reinforcement Learning instead of CNNs for UV unwrapping. 
+- This may be better. 
 
 An Ode to Mark Rothko
