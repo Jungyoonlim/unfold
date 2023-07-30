@@ -1,29 +1,46 @@
-import tensorflow as tf
-from keras import layers, models
+from gym import spaces
+import gym
+import numpy as np 
+from stable_baselines3 import PPO
 
-model = models.Sequential()
+class UVunwrap(gym.Env):
+    def __init__(self):
+        super(UVunwrap, self).__init__()
 
-# Add initial 3D convolution and pooling layers
-model.add(layers.Conv3D(32, (3, 3, 3), activation='relu', input_shape=(None, None, None, 1))) # Adjust the input shape
-model.add(layers.MaxPooling3D((2, 2, 2)))
+        # Define action and observation space
+        n_actions = 5
+        self.action_space = spaces.Discrete(n_actions)
+        
+        # Define observation space
+        obs_height = 64
+        obs_width = 64
+        obs_channels = 1
+        obs_shape = (obs_height, obs_width, obs_channels)
+        self.observation_space = spaces.Box(low=0, high=255, shape=obs_shape, dtype=np.uint8)
 
-# Transition to 2D data
-model.add(layers.Reshape(target_shape=(None, None, -1))) # You'll need to adjust the target shape
 
-# Add 2D convolution and pooling layers
-model.add(layers.Conv2D(64, (3, 3), activation='relu'))
-model.add(layers.MaxPooling2D((2, 2)))
+    def step(self, action):
+        self.state = apply_action(self.state, action)
+    
 
-# Flatten and add dense layers
-model.add(layers.Flatten())
-model.add(layers.Dense(64, activation='relu'))
-model.add(layers.Dense(10)) # Adjust the output size
+    def reset(self):
+    
+    def render(self, mode='human'):
+    
 
-# compile the model
-model.compile(optimizer='adam',
-              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-              metrics=['accuracy'])
+env = UVunwrap()
 
-# fit the model
-history = model.fit(train_images, train_labels, epochs=10, 
-                    validation_data=(test_images, test_labels))
+model = PPO("MlpPolicy", env, verbose=1)
+
+model.learn(total_timesteps=10000)
+
+model.save("uv_unwrapping_agent")
+
+model = PPO.load("uv_unwrapping_agent")
+
+# test the agent 
+obs = env.reset()
+for i in range(100):
+    action, _states = model.predict(obs)
+    obs, rewards, dones, info = env.step(action)
+    env.render()
