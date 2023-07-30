@@ -22,6 +22,7 @@ Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 
 ## What am I going to do?
 - [ ] RL Algorithm 
+- [ ] Learn UV unwrapping rules 
 - [ ] Develop a web-based user interface or a plugin for a popular 3D modeling sw to make a way to upload their 3D models and download the generated 2D UV maps. 
 - [ ] Incorporate my RL model -- embed in my application and able to accept 3D models as input and output 2D UV maps.
 - [ ] Handle File I/O -- Need to be able to read in 3D model files in various formates and export 2D UV maps in a format thta users can use in their texturing workflow (.png, .jpg, etc)
