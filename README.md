@@ -1,9 +1,8 @@
-# rothko AI
+# rothko AI - Old
 Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 
-# What Rothko does: AI Art and Design Studio
+# What Rothko does: AI Art and Design Studio 
 - Project #1:  Automate UV unwrapping for 3D modeling (in interior design, games, 3d art, ar/vr, architecture, engineering, product design etc)
-#### Moving Project 2 and 3 to different repos
 - Project #2: Unsupervised Learning x Art. Algorithms find patterns beyond human labels -- that was not thought possible. Exploring the gaps between language. 
 - Project #3 (TBD): AI x Style. What is it to create your 'style'?
 
