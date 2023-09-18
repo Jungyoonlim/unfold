@@ -1,5 +1,5 @@
 # What Unfold does
-- Automate UV unwrapping for 3D modeling (in interior design, games, 3d art, ar/vr, architecture, engineering, product design etc)
+- Automate UV unwrapping for 3D models (in interior design, games, 3d art, ar/vr, architecture, engineering, product design etc)
 
 
 ## What is UV-ing?
