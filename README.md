@@ -1,10 +1,6 @@
-# rothko AI - Old
-Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
+# What Unfold does
+- Automate UV unwrapping for 3D modeling (in interior design, games, 3d art, ar/vr, architecture, engineering, product design etc)
 
-# What Rothko does: AI Art and Design Studio 
-- Project #1:  Automate UV unwrapping for 3D modeling (in interior design, games, 3d art, ar/vr, architecture, engineering, product design etc)
-- Project #2: Unsupervised Learning x Art. Algorithms find patterns beyond human labels -- that was not thought possible. Exploring the gaps between language. 
-- Project #3 (TBD): AI x Style. What is it to create your 'style'?
 
 ## What is UV-ing?
 - ML Algorithms can have an advantage by training on a wide variety of complex geometries, e.g. dealing with non-planar or concave polygons, quite common in 3D models. 
@@ -30,4 +26,3 @@ Artificial Intelligence and Art, Man and Machine, Tragedy and Ecstasy
 - [ ] Maps should be well laid-out for good performance and usability // follow the guidelines and rules of UV mapping
 - [ ] Test and Iterate! 
 
-An Ode to Mark Rothko
