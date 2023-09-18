@@ -14,7 +14,7 @@
 - Plans for Jul 25 - Aug 1: Data cleaning, data augmentation, data preprocessing for Project #1, Data preparation (Moma's Collection) for Project #2
 - Jul 27: Need to learn more about GANs. Will document on my blog. 
 - Jul 29: Trying Reinforcement Learning instead of CNNs for UV unwrapping. Thinking about sorting data into kinds of geometry.
-- Sep 17: Got back to the project, (have been palying around with other stuff) !
+- Sep 17: Got back to the project, (have been playing around with other stuff) !
 
 ## What am I going to do?
 - [ ] RL Algorithm 
