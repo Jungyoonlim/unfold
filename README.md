@@ -5,6 +5,7 @@
 ## What is UV-ing?
 - ML Algorithms can have an advantage by training on a wide variety of complex geometries, e.g. dealing with non-planar or concave polygons, quite common in 3D models. 
 
+## Unfold Project 
 - RL Algorithm 
 - Learn UV unwrapping rules 
 - Develop a web-based user interface or a plugin for a popular 3D modeling sw to make a way to upload their 3D models and download the generated 2D UV maps. 
